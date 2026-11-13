@@ -1,0 +1,20 @@
+KAWTAL ka alaa fitna — prototype de départ (13 novembre 2026)
+
+CONTENU
+- index.html / style.css : interface mobile
+- app.js : inscription, connexion et création/liste de tontines via Supabase
+- config.js : emplacement URL + clé anon Supabase
+- supabase/schema.sql : table tontines et politiques RLS de base
+
+IMPORTANT
+Ce ZIP est une reconstruction de démarrage à partir des décisions et du guide du projet. Ce n'est pas une copie garantie du code exact de l'ancien site Netlify : le code source précédent n'était pas disponible dans les fichiers retrouvés.
+Le schéma fourni est volontairement minimal : il ne gère pas encore les membres, cotisations, tours de paiement ni Orange Money. Ne l'utilisez pas pour encaisser de l'argent réel.
+Ne partagez jamais votre mot de passe Supabase ni une clé service_role.
+
+POUR COMMENCER
+1. Décompressez ce ZIP sur le téléphone ou l'ordinateur.
+2. Déposez le contenu extrait dans un dépôt GitHub.
+3. Dans Supabase, gardez votre projet existant. Ouvrez SQL Editor et exécutez supabase/schema.sql.
+4. Dans Project Settings > API, copiez l'URL du projet et la clé anon/publishable.
+5. Collez-les dans config.js. Ne collez pas la clé service_role.
+6. Envoyez ensuite les fichiers mis à jour sur GitHub.

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102a43"><title>KAWTAL — Ka alaa fitna</title><link rel="stylesheet" href="style.css"></head>
+<body><header><div class="brand"><div class="mark">K</div><div><strong>KAWTAL</strong><small>ka alaa fitna</small></div></div><span id="connection" class="status">Mode démo</span></header>
+<main><section class="hero"><p class="eyebrow">ENSEMBLE, ON AVANCE</p><h1>Bienvenue sur <em>KAWTAL</em></h1><p>Organisez vos tontines, suivez les membres et gardez une trace claire des cotisations.</p></section>
+<section class="auth panel"><div class="tabs"><button class="tab active" data-tab="login">Connexion</button><button class="tab" data-tab="signup">Créer un compte</button></div>
+<form id="authForm"><label>Adresse e-mail<input id="email" type="email" required placeholder="exemple@email.com"></label><label>Mot de passe<input id="password" type="password" minlength="6" required placeholder="6 caractères minimum"></label><button class="primary" id="authSubmit">Se connecter</button><p id="authMessage" class="hint">Prototype de démonstration. Configurez Supabase pour activer les comptes.</p></form>
+<button id="logout" class="secondary hidden">Se déconnecter</button></section>
+<section class="dashboard"><div class="section-head"><div><p class="eyebrow">ESPACE PERSONNEL</p><h2>Mes tontines</h2></div><button id="newToggle" class="primary">＋ Nouvelle tontine</button></div>
+<form id="tontineForm" class="panel hidden"><label>Nom de la tontine<input id="tName" required placeholder="Ex. Tontine familiale"></label><div class="two"><label>Montant par cotisation (GNF)<input id="amount" type="number" min="1" required placeholder="100000"></label><label>Fréquence<select id="frequency"><option value="weekly">Chaque semaine</option><option value="monthly">Chaque mois</option><option value="daily">Chaque jour</option></select></label></div><button class="primary">Créer la tontine</button></form>
+<div id="tontines" class="cards"><article class="empty panel">Aucune tontine affichée pour le moment. Connectez Supabase ou créez une tontine de démonstration.</article></div></section>
+<footer>© 2026 KAWTAL · Prototype en construction · Guinée</footer></main>
+<script type="module" src="app.js"></script></body></html>
